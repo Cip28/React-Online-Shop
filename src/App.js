@@ -55,7 +55,7 @@ function App () {
         </header>
         <main>
         <Routes>        
-          <Route exact path="/" element={<Home></Home>}></Route>
+          <Route exact path="/React-Online-Shop" element={<Home></Home>}></Route>
           <Route path="/cart" element={<Cart itemCart={itemCart} setItemCart={setItemCart} onAdd={onAdd} onRemove={onRemove} onDelete={ onDelete} ></Cart>}></Route>
           <Route path="/products" element={<Products products={products} onAdd={onAdd} clicked={clicked}></Products>}></Route>
           <Route  path="/signup" element={<Signup></Signup>}></Route>

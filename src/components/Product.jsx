@@ -2,14 +2,13 @@ import React from 'react'
 
 export default function Product (props) {
     const {  product, onAdd } = props;
-    
 
     return (
     
         
         <div className='product'>   
             <div className='img'>
-                <img src={`/images/${product.image}`} alt={product.description} />
+            <img src={process.env.PUBLIC_URL + `/images/${product.image}`} />
             </div>    
             <div className=' d-flex justify-content-between align-items pt-3'>
                 <h1 style={{fontSize:'1.7rem'}}>{product.name}</h1>

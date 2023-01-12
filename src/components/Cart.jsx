@@ -19,7 +19,7 @@ export default function Cart (props) {
                 {itemCart.map(item => (
                     <div key={item.id} className=''>
                         <div className='cart d-flex justify-content-around'>
-                            <img src={`/images/${item.image}`} className='cart-image' alt={item.description} />
+                            <img src={process.env.PUBLIC_URL + `/images/${item.image}`} className='cart-image' alt={item.description} />
                             <div>
                                     <h3>{item.name}</h3>
                                     <div className='d-flex justify-content-around'>
